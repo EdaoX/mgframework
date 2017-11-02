@@ -1,0 +1,59 @@
+.container
+    width: 100%
+    max-width: $container-width
+    margin: auto
+
+.row:before,
+.row:after
+    +clearfix
+
+[class*='col-xs-'],
+[class*='col-sm-'],
+[class*='col-md-'],
+[class*='col-lg-'],
+[class*='col-xl-'],
+    float: left
+    min-height: 1px
+    box-sizing: border-box
+    width: 100%
+    padding-left: $gutter
+    padding-right: $gutter
+
+@for $i from 1 to $total-columns + 1
+    .col-xs-#{$i}
+        width: 100% * ( $i / $total-columns )
+
+    .col-xs-offset-#{$i}
+        margin-left: 100% * ( $i / $total-columns )
+
++on-tablet-portrait-up
+    @for $i from 1 to $total-columns + 1
+        .col-sm-#{$i}
+            width: 100% * ( $i / $total-columns )
+
+        .col-sm-offset-#{$i}
+            margin-left: 100% * ( $i / $total-columns )
+
++on-tablet-landscape-up
+    @for $i from 1 to $total-columns + 1
+        .col-md-#{$i}
+            width: 100% * ( $i / $total-columns )
+
+        .col-md-offset-#{$i}
+            margin-left: 100% * ( $i / $total-columns )
+
++on-desktop-standard-up
+    @for $i from 1 to $total-columns + 1
+        .col-lg-#{$i}
+            width: 100% * ( $i / $total-columns )
+
+        .col-lg-offset-#{$i}
+            margin-left: 100% * ( $i / $total-columns )
+
++on-desktop-big-up
+    @for $i from 1 to $total-columns + 1
+        .col-xl-#{$i}
+            width: 100% * ( $i / $total-columns )
+
+        .col-xl-offset-#{$i}
+            margin-left: 100% * ( $i / $total-columns )

@@ -1,0 +1,31 @@
+=on-phones-only
+    @media only screen and (max-width : ($breakpoint-tablets-portrait - 1))
+        @content
+
+=on-tablet-portrait-up
+    @media only screen and (min-width : $breakpoint-tablets-portrait)
+        @content
+
+=on-tablet-portrait-only
+    @media only screen and (min-width : $breakpoint-tablets-portrait) and (max-width : ($breakpoint-tablets-landscape - 1))
+        @content
+
+=on-tablet-landscape-up
+    @media only screen and (min-width : $breakpoint-tablets-landscape)
+        @content
+
+=on-tablet-landscape-only
+    @media only screen and (min-width : $breakpoint-tablets-landscape) and (max-width : ($breakpoint-desktop-standard - 1))
+        @content
+
+=on-desktop-standard-up
+    @media only screen and (min-width : $breakpoint-desktop-standard)
+        @content
+
+=on-desktop-standard-only
+    @media only screen and (min-width : $breakpoint-desktop-standard) and (max-width : ($breakpoint-desktop-big - 1))
+        @content
+
+=on-desktop-big-up
+    @media only screen and (min-width : $breakpoint-desktop-big)
+        @content
