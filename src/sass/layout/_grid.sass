@@ -3,9 +3,16 @@
     max-width: $container-width
     margin: auto
 
-.row:before,
-.row:after
+    & *
+        box-sizing: border-box
+
+.container-fluid
+    @extend .container
+    max-width: 100%
+
+.row
     +clearfix
+    margin-top: $gutter
 
 [class*='col-xs-'],
 [class*='col-sm-'],
