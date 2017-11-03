@@ -1,0 +1,97 @@
+.btn
+    +default-pattern
+    text-align: center
+    text-decoration: none
+    padding: $default-padding
+    display: inline-block
+    border-radius: $default-border-radius
+    transition: color $default-transition-timing, background-color $default-transition-timing
+
+    &:hover
+        text-decoration: none
+        background-color: lighten($color-default, $default-lighten-amount)
+
+    &.btn-primary
+        +primary-pattern
+        &:hover
+            background-color: lighten($color-primary, $default-lighten-amount)
+
+    &.btn-success
+        +success-pattern
+        &:hover
+            background-color: lighten($color-success, $default-lighten-amount)
+
+    &.btn-info
+        +info-pattern
+        &:hover
+            background-color: lighten($color-info, $default-lighten-amount)
+
+    &.btn-warning
+        +warning-pattern
+        &:hover
+            background-color: lighten($color-warning, $default-lighten-amount)
+
+    &.btn-danger
+        +danger-pattern
+        &:hover
+            background-color: lighten($color-danger, $default-lighten-amount)
+
+    &.btn-block
+        width: 100%
+
+.btn-ghost
+    @extend .btn
+    border: $default-border-size solid $color-default
+    padding: $default-padding - $default-border-size
+    background-color: $transparent
+    color: $color-default
+    transition: color $default-transition-timing, background-color $default-transition-timing, border-color $default-transition-timing
+
+    &:hover
+        border-color: transparent
+        color: $color-default-contrast
+
+    &.btn-primary
+        border-color: $color-primary
+        color: $color-primary
+        background-color: $transparent
+
+        &:hover
+            border-color: transparent
+            color: $color-primary-contrast
+
+    &.btn-info
+        border-color: $color-info
+        color: $color-info
+        background-color: $transparent
+
+        &:hover
+            border-color: transparent
+            color: $color-info-contrast
+
+    &.btn-success
+        border-color: $color-success
+        color: $color-success
+        background-color: $transparent
+
+        &:hover
+            border-color: transparent
+            color: $color-success-contrast
+
+    &.btn-warning
+        border-color: $color-warning
+        color: $color-warning
+        background-color: $transparent
+
+        &:hover
+            border-color: transparent
+            color: $color-warning-contrast
+
+    &.btn-danger
+        border-color: $color-danger
+        color: $color-danger
+        background-color: $transparent
+
+        &:hover
+            border-color: transparent
+            color: $color-danger-contrast
