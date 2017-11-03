@@ -1,32 +1,27 @@
 .alert
+    +default-pattern
     width: 100%
     padding: $default-padding
     background-color: $color-default
-    color: $color-default-contrast
     border-radius: $default-border-radius
-    border : 1px solid darken($color-default, $default-darken-amount)
+    border : 2px solid darken($color-default, $default-darken-amount)
 
     &.alert-main
-        background-color: $color-main
-        color: $color-main-contrast
-        border : 1px solid darken($color-main, $default-darken-amount)
+        +main-pattern
+        border-color: darken($color-main, $default-darken-amount)
 
     &.alert-success
-        background-color: $color-success
-        color: $color-success-contrast
-        border : 1px solid darken($color-success, $default-darken-amount)
+        +success-pattern
+        border-color: darken($color-success, $default-darken-amount)
 
     &.alert-info
-        background-color: $color-info
-        color: $color-info-contrast
-        border : 1px solid darken($color-info, $default-darken-amount)
+        +info-pattern
+        border-color: darken($color-info, $default-darken-amount)
 
     &.alert-warning
-        background-color: $color-warning
-        color: $color-warning-contrast
-        border : 1px solid darken($color-warning, $default-darken-amount)
+        +warning-pattern
+        border-color: darken($color-warning, $default-darken-amount)
 
     &.alert-danger
-        background-color: $color-danger
-        color: $color-danger-contrast
-        border : 1px solid darken($color-danger, $default-darken-amount)
+        +danger-pattern
+        border-color: darken($color-danger, $default-darken-amount)
