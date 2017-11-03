@@ -13,11 +13,14 @@
 [class*='col-lg-'],
 [class*='col-xl-'],
     float: left
-    min-height: 1px
     box-sizing: border-box
     width: 100%
     padding-left: $gutter
     padding-right: $gutter
+
+    &:empty::after
+        content: '\200b'
+        visibility: hidden
 
 @for $i from 1 to $total-columns + 1
     .col-xs-#{$i}
