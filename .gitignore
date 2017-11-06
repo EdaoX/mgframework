@@ -1,3 +1,5 @@
+node_modules/
+doc/
 css/
 js/
 index.html

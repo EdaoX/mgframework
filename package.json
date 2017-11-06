@@ -1,0 +1,23 @@
+{
+  "name": "mgframework",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-doc": "kss --config kss-config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdaoX/mgframework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdaoX/mgframework/issues"
+  },
+  "homepage": "https://github.com/EdaoX/mgframework#readme",
+  "devDependencies": {
+    "kss": "^3.0.0-beta.18",
+    "michelangelo": "^0.6.1"
+  }
+}

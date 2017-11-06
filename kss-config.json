@@ -1,0 +1,12 @@
+{
+    "title" : "MGFramework Documentation",
+    "source" : "src/sass/",
+    "destination" : "doc/",
+    "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+    "css" : [
+        "../css/mgf.min.css"
+    ],
+    "js" : [
+        "../js/mgf.js"
+    ]
+}
