@@ -1,4 +1,20 @@
-.btn
+// Buttons
+//
+// Button styles
+//
+// Markup:
+// <a href="#" class="btn {{modifier_class}}">Pulsante!</a>
+// <a href="#" class="btn-ghost {{modifier_class}}">Pulsante!</a>
+//
+// :hover - When hovered
+// .btn-primary - Using primary color
+// .btn-info - Using information color
+// .btn-success - Using success color
+// .btn-warning - Using warning color
+// .btn-danger - Using danger color
+//
+// Styleguide Components.Buttons.btn
+.btn, a.btn, a.btn:visited
     +default-pattern
     text-align: center
     text-decoration: none
@@ -39,7 +55,7 @@
     &.btn-block
         width: 100%
 
-.btn-ghost
+.btn-ghost, a.btn-ghost, a.btn-ghost:visited
     @extend .btn
     border: $default-border-size solid $color-default
     padding: $default-padding - $default-border-size
